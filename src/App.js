@@ -11,9 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
-import { BasicTable } from './components/tables/BasicTable'
-import FormikContainerChakra from './components/formik-elements/FormikContainerChakra'
-
+import LoginView from '../src/views/auth/LoginView'
 
 
 
@@ -21,7 +19,7 @@ import FormikContainerChakra from './components/formik-elements/FormikContainerC
 function App() {
   return (
     <ChakraProvider theme={theme}>    
-        <FormikContainerChakra />   
+        <LoginView />   
     </ChakraProvider>
   );
 }
